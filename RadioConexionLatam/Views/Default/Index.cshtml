@@ -1,0 +1,78 @@
+﻿@model IEnumerable<RadioConexionLatam.Models.Anuncios>
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+@section scripts {
+    <script>
+
+    </script>
+}
+
+
+
+<div class="container">
+    <h2>Lo más reciente</h2>
+    <div class="row news-container">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 news-item">
+                <div class="card">
+                    @if (!string.IsNullOrEmpty(item.ImagenRuta))
+                    {
+                        <img src="@Url.Content(item.ImagenRuta)" class="card-img-top" alt="Imagen de @item.titulo">
+                    }
+                    <div class="card-body">
+                        <h5 class="card-title">@item.titulo</h5>
+                        <p class="card-text">@item.subtitulo</p>
+                        <a href="@Url.Action("DetallesAnuncio", "Default", new { id = item.idAnuncio })" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+<!-- Sección de Feeds con Diseño Friki -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card bg-dark text-light">
+                <div class="card-header bg-primary">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </div>
+                <div class="card-body">
+                    <img src="~/Content/images/diseño1.png" alt="Feed de Facebook" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-dark text-light">
+                <div class="card-header bg-info">
+                    <i class="fab fa-twitter"></i> Twitter
+                </div>
+                <div class="card-body">
+                    <p>No hay nada que ver aquí. Por ahora.</p>
+                    <a href="https://twitter.com/AnimeNexus" class="btn btn-info">Ver en Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card bg-dark text-light">
+                <div class="card-header bg-danger">
+                    Las últimas 15 rolas
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-dark text-light">Canción 1</li>
+                    <li class="list-group-item bg-dark text-light">Canción 2</li>
+                    <li class="list-group-item bg-dark text-light">Canción 3</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
