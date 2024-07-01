@@ -14,6 +14,7 @@ namespace RadioConexionLatam.Models
         public Anuncios()
         {
             EnlacesRelacionados = new HashSet<EnlacesRelacionados>();
+            visitas = 0;
         }
 
         [Key]
@@ -29,7 +30,7 @@ namespace RadioConexionLatam.Models
         [Column(TypeName = "text")]
         [Required]
         public string contenido { get; set; }
-
+        [Column(TypeName = "datetime2")]
         public DateTime fechaPublicacion { get; set; }
 
         public int? idUsuario { get; set; }
@@ -39,10 +40,11 @@ namespace RadioConexionLatam.Models
         public int? idImagenPrincipal { get; set; }
 
         public int? idVideoPrincipal { get; set; }
-        public int? idCarrusel { get; set; }
+        public int? idCarrusel { get; set; } 
 
         [StringLength(1)]
         public string estado { get; set; }
+        public int? visitas { get; set; }
 
         public virtual Categorias Categorias { get; set; }
 
@@ -51,7 +53,6 @@ namespace RadioConexionLatam.Models
         public virtual Usuarios Usuarios { get; set; }
 
         public virtual Videos Videos { get; set; }
-        [ForeignKey("idCarrusel")]
         public virtual Carrusel Carrusel { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -15,7 +15,7 @@ namespace RadioConexionLatam.Models
 
         [Required]
         [StringLength(255)]
-        public string url { get; set; } // URL for the image in the carousel
+        public string url { get; set; }
 
         public int idCarrusel { get; set; }
 

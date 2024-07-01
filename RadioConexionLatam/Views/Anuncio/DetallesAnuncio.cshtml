@@ -2,6 +2,8 @@
 
 @{
     Layout = null;
+    string userRoleText = ViewBag.UserRole == "1" ? "Administrador" : ViewBag.UserRole == "2" ? "Empleado" : "Desconocido";
+
 }
 
 <!DOCTYPE html>
@@ -41,24 +43,21 @@
                             </div>
                         </div>
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                            <!-- User -->
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="~/Content/Usuario/img/avatars/1.png" class="w-px-40 h-auto rounded-circle" />
+                                        <img src="../Content/Usuario/img/avatars/usuario.png" class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
                                         <a class="dropdown-item" href="#">
                                             <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <div class="avatar avatar-online">
-                                                        <img src="~/Content/Usuario/img/avatars/1.png" class="w-px-40 h-auto rounded-circle" />
-                                                    </div>
-                                                </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">Renato Chambilla</span>
-                                                    <small class="text-muted">Administrador</small>
+                                                    <span class="fw-semibold d-block">@ViewBag.UserName @ViewBag.UserLastName</span>
+                                                    <small class="text-muted">@userRoleText</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -67,22 +66,14 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="bx bx-user me-2"></i>
-                                            <span class="align-middle">Mi Perfil</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown-divider"></div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                        <a class="dropdown-item" href="@Url.Action("Logout", "Login")">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Cerrar Sesión</span>
                                         </a>
                                     </li>
                                 </ul>
                             </li>
+                            <!--/ User -->
                         </ul>
                     </div>
                 </nav>
@@ -109,6 +100,23 @@
                                 <p><strong>Contenido:</strong> @Model.contenido</p>
                                 <p><strong>Fecha de Publicación:</strong> @Model.fechaPublicacion.ToString("dd/MM/yyyy")</p>
                                 <p><strong>Estado:</strong> @(Model.estado == "A" ? "Activo" : "Inactivo")</p>
+
+                                @if (Model.Carrusel?.DetalleCarrusel != null && Model.Carrusel.DetalleCarrusel.Any())
+                                {
+                                    <div class="text-center mb-4">
+                                        <h3>Imagenes del Carrusel</h3>
+                                        @foreach (var image in Model.Carrusel.DetalleCarrusel)
+                                        {
+                                            <img src="@Url.Content(image.url)" class="img-fluid" alt="Carousel Image" style="max-width: 200px; height: auto; margin: 5px;">
+                                        }
+                                    </div>
+                                }
+                                else
+                                {
+                                    <p>No carousel images available.</p>
+                                }
+
+
                                 <a href="@Url.Action("VisualizarAnuncio", "Anuncio")" class="btn btn-primary">Volver a la lista</a>
                             </div>
                         </div>

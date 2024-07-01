@@ -1,6 +1,6 @@
-﻿
-@{
+﻿@{
     Layout = null;
+    string userRoleText = ViewBag.UserRole == "1" ? "Administrador" : ViewBag.UserRole == "2" ? "Empleado" : "Desconocido";
 }
 
 <html lang="en"
@@ -24,7 +24,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"
           rel="stylesheet" />
 
     <!-- Icons. Uncomment required icon fonts -->
@@ -57,7 +57,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="index.html" class="app-brand-link">
+                    <a href="~/Default/Index" class="app-brand-link" target="_blank">
                         <span class="app-brand-logo demo">
                             <img src="~/Content/Usuario/img/logo_1.png" style="width: 60px" />
                         </span>
@@ -81,7 +81,7 @@
                     </li>
 
                     <li class="menu-header small text-uppercase">
-                        <span class="menu-header-text">Mantenimiento</span>
+                        <span class="menu-header-text">MODULOS</span>
                     </li>
                     <li class="menu-item">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -99,6 +99,11 @@
                                     <div data-i18n="Notifications">Listar Anuncios</div>
                                 </a>
                             </li>
+                            <li class="menu-item">
+                                <a href="~/Anuncio/ListarCategorias" class="menu-link">
+                                    <div data-i18n="Notifications">Categorias</div>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="menu-item">
@@ -108,12 +113,12 @@
                         </a>
                         <ul class="menu-sub">
                             <li class="menu-item">
-                                <a href="auth-login-basic.html" class="menu-link" target="_blank">
+                                <a href="~/Eventos/CrearEvento" class="menu-link">
                                     <div data-i18n="Basic">Crear Evento</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="auth-register-basic.html" class="menu-link" target="_blank">
+                                <a href="~/Eventos/Index" class="menu-link">
                                     <div data-i18n="Basic">Listar Eventos</div>
                                 </a>
                             </li>
@@ -133,6 +138,24 @@
                             <li class="menu-item">
                                 <a href="~/Usuario/VisualizarUsuario" class="menu-link">
                                     <div data-i18n="Under Maintenance">Listar Usuarios</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                            <div data-i18n="Misc">Programacion Semanal</div>
+                        </a>
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="~/Programacion/Crear" class="menu-link">
+                                    <div data-i18n="Error">Crear Programacion</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="~/Programacion/VisualizarProgramacion" class="menu-link">
+                                    <div data-i18n="Under Maintenance">Listar Programacion</div>
                                 </a>
                             </li>
                         </ul>
@@ -172,21 +195,16 @@
                             <li class="nav-item navbar-dropdown dropdown-user dropdown">
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                                     <div class="avatar avatar-online">
-                                        <img src="../Content/Usuario/img/avatars/1.png" class="w-px-40 h-auto rounded-circle" />
+                                        <img src="../Content/Usuario/img/avatars/usuario.png" class="w-px-40 h-auto rounded-circle" />
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
                                         <a class="dropdown-item" href="#">
                                             <div class="d-flex">
-                                                <div class="flex-shrink-0 me-3">
-                                                    <div class="avatar avatar-online">
-                                                        <img src="../Content/Usuario/img/avatars/1.png" class="w-px-40 h-auto rounded-circle" />
-                                                    </div>
-                                                </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block">Renato Chambilla</span>
-                                                    <small class="text-muted">Administrador</small>
+                                                    <span class="fw-semibold d-block">@ViewBag.UserName @ViewBag.UserLastName</span>
+                                                    <small class="text-muted">@userRoleText</small>
                                                 </div>
                                             </div>
                                         </a>
@@ -195,16 +213,7 @@
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">
-                                            <i class="bx bx-user me-2"></i>
-                                            <span class="align-middle">Mi Perfil</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="dropdown-divider"></div>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                        <a class="dropdown-item" href="@Url.Action("Logout", "Login")">
                                             <i class="bx bx-power-off me-2"></i>
                                             <span class="align-middle">Cerrar Sesión</span>
                                         </a>
@@ -228,7 +237,7 @@
                                     <div class="d-flex align-items-end row">
                                         <div class="col-sm-7">
                                             <div class="card-body">
-                                                <h5 class="card-title text-primary">Bienvenido, Renato</h5>
+                                                <h5 class="card-title text-primary">Bienvenido, @ViewBag.UserName @ViewBag.UserLastName</h5>
                                                 <p class="mb-4">
                                                     Este es el sistema de Radio Latam.
                                                 </p>
@@ -259,7 +268,7 @@
                                                     </div>
                                                 </div>
                                                 <span class="fw-semibold d-block mb-1">Noticias</span>
-                                                <h3 class="card-title mb-2">4</h3>
+                                                <h3 class="card-title mb-2">@ViewBag.ActiveAnunciosCount</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -276,7 +285,7 @@
                                                     </div>
                                                 </div>
                                                 <span>Eventos</span>
-                                                <h3 class="card-title text-nowrap mb-1">10</h3>
+                                                <h3 class="card-title text-nowrap mb-1">@ViewBag.ActiveEventosCount</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -315,7 +324,7 @@
 
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
-    
+
 
     <!-- Core JS -->
     <!-- build:js Content/Usuario/vendor/js/core.js -->

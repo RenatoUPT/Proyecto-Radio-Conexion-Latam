@@ -1,20 +1,20 @@
 ﻿using RadioConexionLatam.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.UI.WebControls;
-using System.Data.Entity;
-using System.Net;
 
 namespace RadioConexionLatam.Controllers
 {
     public class AnuncioController : Controller
     {
         private Anuncios objAnuncios = new Anuncios();
+        private Model1 db = new Model1();
 
         // GET: Anuncio
         public ActionResult Index()
@@ -34,63 +34,37 @@ namespace RadioConexionLatam.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Categorias = new SelectList(GetCategorias(), "idCategoria", "nombre");
+                ViewBag.Categorias = new SelectList(db.Categorias, "idCategoria", "nombre");
                 return View(anuncio);
             }
 
-            using (var db = new Model1())
+            try
             {
-                using (var dbContextTransaction = db.Database.BeginTransaction())
+                if (ImagenFile != null && ImagenFile.ContentLength > 0)
                 {
-                    try
-                    {
-                        // Process the main image
-                        if (ImagenFile != null && ImagenFile.ContentLength > 0)
-                        {
-                            var fileName = Path.GetFileName(ImagenFile.FileName);
-                            var path = Path.Combine(Server.MapPath("~/Content/images/Anuncios"), Guid.NewGuid().ToString() + "_" + fileName);  // Use GUID to prevent name conflicts
-                            ImagenFile.SaveAs(path);
-                            anuncio.idImagenPrincipal = SaveImageToDatabase(db, fileName, path, "Main image for " + anuncio.titulo);
-                        }
-
-                        // Create carousel if there are images
-                        if (imageFiles != null && imageFiles.Any())
-                        {
-                            int? idCarrusel = CreateCarruselWithImages(db, imageFiles, "Carousel for " + anuncio.titulo);
-                            anuncio.idCarrusel = idCarrusel; // Asignar el idCarrusel al anuncio
-                        }
-
-                        // Process video if provided
-                        if (!string.IsNullOrEmpty(VideoUrl))
-                        {
-                            anuncio.idVideoPrincipal = SaveVideoToDatabase(db, VideoUrl);
-                        }
-
-                        anuncio.fechaPublicacion = DateTime.Now;
-                        db.Anuncios.Add(anuncio);
-                        db.SaveChanges();
-                        dbContextTransaction.Commit(); // Confirmar la transacción si todo está bien
-                        return RedirectToAction("VisualizarAnuncio");
-                    }
-                    catch (System.Data.Entity.Infrastructure.DbUpdateException ex)
-                    {
-                        dbContextTransaction.Rollback();
-
-                        // Captura el mensaje de error completo, incluyendo las excepciones internas
-                        var error = ex.InnerException?.InnerException?.Message ?? ex.Message;
-                        ViewBag.ErrorMessage = "Error al guardar el anuncio: " + error;
-                        ViewBag.Categorias = new SelectList(GetCategorias(), "idCategoria", "nombre");
-
-                        return View(anuncio);
-                    }
-                    catch (Exception ex)
-                    {
-                        dbContextTransaction.Rollback(); // Rollback transaction on error
-                        ViewBag.ErrorMessage = "Error general al guardar el anuncio: " + ex.Message;
-                        ViewBag.Categorias = new SelectList(GetCategorias(), "idCategoria", "nombre");
-                        return View(anuncio);
-                    }
+                    anuncio.idImagenPrincipal = SaveImageToDatabase(ImagenFile, "~/Content/images/Anuncios", "Main image for " + anuncio.titulo);
                 }
+
+                if (!string.IsNullOrEmpty(VideoUrl))
+                {
+                    anuncio.idVideoPrincipal = SaveVideoToDatabase(VideoUrl);
+                }
+
+                if (imageFiles != null && imageFiles.Any())
+                {
+                    anuncio.idCarrusel = CreateCarruselWithImages(imageFiles, "Carousel for " + anuncio.titulo);
+                }
+
+                anuncio.fechaPublicacion = DateTime.Now;
+                db.Anuncios.Add(anuncio);
+                db.SaveChanges();
+                return RedirectToAction("VisualizarAnuncio");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.ErrorMessage = "Error al guardar el anuncio: " + ex.Message;
+                ViewBag.Categorias = new SelectList(GetCategorias(), "idCategoria", "nombre", anuncio.idCategoria);
+                return View(anuncio);
             }
         }
 
@@ -174,100 +148,148 @@ namespace RadioConexionLatam.Controllers
                 return View(anuncio);
             }
 
-            using (var db = new Model1())
+            var anuncioExistente = db.Anuncios.Find(anuncio.idAnuncio);
+            if (anuncioExistente == null)
             {
-                var anuncioExistente = db.Anuncios
-                    .Include(a => a.Carrusel)
-                    .Include(a => a.Carrusel.DetalleCarrusel)
-                    .Include(a => a.Imagenes)
-                    .Include(a => a.Videos)
-                    .FirstOrDefault(a => a.idAnuncio == anuncio.idAnuncio);
+                return HttpNotFound();
+            }
 
-                if (anuncioExistente == null)
+            anuncioExistente.titulo = anuncio.titulo;
+            anuncioExistente.subtitulo = anuncio.subtitulo;
+            anuncioExistente.contenido = anuncio.contenido;
+            anuncioExistente.estado = anuncio.estado ?? "A";
+            anuncioExistente.idCategoria = anuncio.idCategoria;
+
+            ProcesarMultimedia(anuncioExistente, ImagenFile, VideoUrl, SinImagen, SinVideo);
+
+            // Manejo del carrusel de imágenes
+            if (imageFiles != null && imageFiles.Any())
+            {
+                if (anuncioExistente.idCarrusel.HasValue)
                 {
-                    return HttpNotFound();
+                    // Elimina el carrusel existente si hay uno
+                    RemoveCarrusel(anuncioExistente.idCarrusel.Value);
                 }
+                // Crea un nuevo carrusel
+                anuncioExistente.idCarrusel = CreateCarruselWithImages(imageFiles, "Updated Carousel for " + anuncio.titulo);
+            }
 
-                try
-                {
-                    // Update basic fields
-                    anuncioExistente.titulo = anuncio.titulo;
-                    anuncioExistente.subtitulo = anuncio.subtitulo;
-                    anuncioExistente.contenido = anuncio.contenido;
-                    anuncioExistente.fechaPublicacion = DateTime.Now;
-                    anuncioExistente.idCategoria = anuncio.idCategoria;
-                    anuncioExistente.estado = anuncio.estado;
+            db.SaveChanges();
+            return RedirectToAction("VisualizarAnuncio");
+        }
 
-                    // Handle main image
-                    if (SinImagen && anuncioExistente.idImagenPrincipal.HasValue)
-                    {
-                        var imagen = db.Imagenes.Find(anuncioExistente.idImagenPrincipal.Value);
-                        db.Imagenes.Remove(imagen);
-                        anuncioExistente.idImagenPrincipal = null;
-                    }
-                    else if (ImagenFile != null && ImagenFile.ContentLength > 0)
-                    {
-                        var fileName = Path.GetFileName(ImagenFile.FileName);
-                        var path = Path.Combine(Server.MapPath("~/Content/images/Anuncios"), fileName);
-                        ImagenFile.SaveAs(path);
-                        var imageId = SaveImageToDatabase(db, fileName, path, "Updated main image for " + anuncio.titulo);
-                        anuncioExistente.idImagenPrincipal = imageId;
-                    }
-
-                    // Handle video
-                    if (SinVideo && anuncioExistente.idVideoPrincipal.HasValue)
-                    {
-                        var video = db.Videos.Find(anuncioExistente.idVideoPrincipal.Value);
-                        db.Videos.Remove(video);
-                        anuncioExistente.idVideoPrincipal = null;
-                    }
-                    else if (!string.IsNullOrEmpty(VideoUrl))
-                    {
-                        var videoId = SaveVideoToDatabase(db, VideoUrl);
-                        anuncioExistente.idVideoPrincipal = videoId;
-                    }
-
-                    // Handle carousel images
-                    if (imageFiles != null && imageFiles.Any())
-                    {
-                        if (anuncioExistente.idCarrusel.HasValue)
-                        {
-                            var existingCarousel = db.Carrusel.Include(c => c.DetalleCarrusel).FirstOrDefault(c => c.idCarrusel == anuncioExistente.idCarrusel.Value);
-                            if (existingCarousel != null)
-                            {
-                                db.DetalleCarrusel.RemoveRange(existingCarousel.DetalleCarrusel);
-                            }
-                        }
-                        int? idCarrusel = CreateCarruselWithImages(db, imageFiles, "Updated carousel for " + anuncio.titulo);
-                        anuncioExistente.idCarrusel = idCarrusel;
-                    }
-
-                    db.SaveChanges();
-                    return RedirectToAction("VisualizarAnuncio");
-                }
-                catch (Exception ex)
-                {
-                    ViewBag.ErrorMessage = "Error updating the announcement: " + ex.Message;
-                    ViewBag.Categorias = new SelectList(GetCategorias(), "idCategoria", "nombre", anuncio.idCategoria);
-                    return View(anuncio);
-                }
+        private void RemoveCarrusel(int carruselId)
+        {
+            var existingCarrusel = db.Carrusel.Include(c => c.DetalleCarrusel).FirstOrDefault(c => c.idCarrusel == carruselId);
+            if (existingCarrusel != null)
+            {
+                db.DetalleCarrusel.RemoveRange(existingCarrusel.DetalleCarrusel);
+                db.Carrusel.Remove(existingCarrusel);
+                db.SaveChanges();
             }
         }
 
-        private int SaveImageToDatabase(Model1 db, string fileName, string filePath, string description)
+        private int? CreateCarruselWithImages(IEnumerable<HttpPostedFileBase> imageFiles, string description)
         {
-            var image = new Imagenes { url = "/Content/images/Anuncios/" + fileName, descripcion = description };
-            db.Imagenes.Add(image);
+            // Asegurarse de que la descripción no exceda 100 caracteres
+            if (description.Length > 100)
+            {
+                description = description.Substring(0, 100); // Trunca a 100 caracteres
+            }
+
+            var carrusel = new Carrusel { descripcion = description };
+            db.Carrusel.Add(carrusel);
+            db.SaveChanges();  // Guarda para obtener el ID del carrusel
+
+            foreach (var file in imageFiles)
+            {
+                if (file != null && file.ContentLength > 0)
+                {
+                    var fileName = Path.GetFileName(file.FileName);
+                    var path = Path.Combine(Server.MapPath("~/Content/images/Carrusel"), fileName);
+                    file.SaveAs(path);
+                    var detalleCarrusel = new DetalleCarrusel { url = "/Content/images/Carrusel/" + fileName, idCarrusel = carrusel.idCarrusel };
+                    db.DetalleCarrusel.Add(detalleCarrusel);
+                }
+            }
+
             db.SaveChanges();
-            return image.idImagen;
+            return carrusel.idCarrusel;
         }
 
-        private int SaveVideoToDatabase(Model1 db, string videoUrl)
+        private void ProcesarMultimedia(Anuncios anuncioExistente, HttpPostedFileBase ImagenFile, string VideoUrl, bool SinImagen, bool SinVideo)
         {
-            var video = new Videos { url = videoUrl, descripcion = "Video from " + videoUrl };
-            db.Videos.Add(video);
-            db.SaveChanges();
-            return video.idVideo;
+            if (SinImagen && anuncioExistente.idImagenPrincipal.HasValue)
+            {
+                RemoveImage(anuncioExistente.idImagenPrincipal.Value);
+                anuncioExistente.idImagenPrincipal = null;
+            }
+            else if (ImagenFile != null && ImagenFile.ContentLength > 0)
+            {
+                anuncioExistente.idImagenPrincipal = SaveImageToDatabase(ImagenFile, "~/Content/images/Anuncios", "Updated image for " + anuncioExistente.titulo);
+            }
+
+            if (SinVideo && anuncioExistente.idVideoPrincipal.HasValue)
+            {
+                RemoveVideo(anuncioExistente.idVideoPrincipal.Value);
+                anuncioExistente.idVideoPrincipal = null;
+            }
+            else if (!string.IsNullOrEmpty(VideoUrl))
+            {
+                anuncioExistente.idVideoPrincipal = SaveVideoToDatabase(VideoUrl);
+            }
+        }
+
+        private void RemoveImage(int imageId)
+        {
+            var image = db.Imagenes.Find(imageId);
+            if (image != null)
+            {
+                db.Imagenes.Remove(image);
+                db.SaveChanges();
+            }
+        }
+
+        private void RemoveVideo(int videoId)
+        {
+            var video = db.Videos.Find(videoId);
+            if (video != null)
+            {
+                db.Videos.Remove(video);
+                db.SaveChanges();
+            }
+        }
+
+        private int? SaveImageToDatabase(HttpPostedFileBase file, string path, string description)
+        {
+            if (file != null && file.ContentLength > 0)
+            {
+                var fileName = Path.GetFileName(file.FileName);
+                var filePath = Path.Combine(Server.MapPath(path), fileName);
+                file.SaveAs(filePath);
+
+                var image = new Imagenes
+                {
+                    url = "/Content/images/Anuncios/" + fileName,
+                    descripcion = description
+                };
+
+                db.Imagenes.Add(image);
+                db.SaveChanges();
+                return image.idImagen;
+            }
+            return null;
+        }
+
+        private int SaveVideoToDatabase(string videoUrl)
+        {
+            using (var db = new Model1())
+            {
+                var video = new Videos { url = videoUrl, descripcion = "Video from " + videoUrl };
+                db.Videos.Add(video);
+                db.SaveChanges();
+                return video.idVideo;
+            }
         }
 
         private List<Categorias> GetCategorias()
@@ -283,7 +305,11 @@ namespace RadioConexionLatam.Controllers
             Anuncios anuncio;
             using (var db = new Model1())
             {
-                anuncio = db.Anuncios.Find(id);
+                anuncio = db.Anuncios
+                    .Include(a => a.Imagenes)
+                    .Include(a => a.Videos)
+                    .Include(a => a.Carrusel.DetalleCarrusel)  // Include carousel details
+                    .FirstOrDefault(a => a.idAnuncio == id);
                 if (anuncio == null)
                 {
                     return HttpNotFound();
@@ -306,62 +332,143 @@ namespace RadioConexionLatam.Controllers
                         anuncio.VideoUrl = anuncio.Videos.url;
                     }
                 }
+                if (anuncio.Carrusel != null)
+                {
+                    anuncio.Carrusel.DetalleCarrusel = anuncio.Carrusel.DetalleCarrusel.ToList();
+                }
             }
             return View(anuncio);
         }
 
-        private int? CreateCarruselWithImages(Model1 db, IEnumerable<HttpPostedFileBase> imageFiles, string description)
+
+        private int? CreateOrUpdateCarruselWithImages(IEnumerable<HttpPostedFileBase> imageFiles, string description, int? existingCarruselId = null)
         {
-            if (!imageFiles.Any())
+            Carrusel carrusel;
+
+            if (existingCarruselId.HasValue)
             {
-                return null; // No files to process
+                carrusel = db.Carrusel.Include(c => c.DetalleCarrusel).FirstOrDefault(c => c.idCarrusel == existingCarruselId.Value);
+                if (carrusel != null)
+                {
+                    db.DetalleCarrusel.RemoveRange(carrusel.DetalleCarrusel);
+                }
+            }
+            else
+            {
+                carrusel = new Carrusel { descripcion = description };
+                db.Carrusel.Add(carrusel);
             }
 
-            var carrusel = new Carrusel { descripcion = description };
-            db.Carrusel.Add(carrusel);
-            db.SaveChanges(); // Save to get ID
+            db.SaveChanges(); // Save to get or confirm the ID
 
             foreach (var file in imageFiles)
             {
-                if (file != null && file.ContentLength > 0)
-                {
-                    var fileName = Path.GetFileName(file.FileName);
-                    var path = Path.Combine(Server.MapPath("~/Content/images/Carrusel"), fileName);
-                    try
-                    {
-                        file.SaveAs(path); // Save the file physically
-
-                        var detalleCarrusel = new DetalleCarrusel
-                        {
-                            url = "/Content/images/Carrusel/" + fileName, // Save the path in DetalleCarrusel table
-                            idCarrusel = carrusel.idCarrusel // Link the detail to the carousel
-                        };
-                        db.DetalleCarrusel.Add(detalleCarrusel);
-                    }
-                    catch (Exception ex)
-                    {
-                        // Log the error (consider using a logging framework or tool)
-                        Debug.WriteLine("Error saving file: " + ex.Message);
-                    }
-                }
+                var fileName = Path.GetFileName(file.FileName);
+                var path = Path.Combine(Server.MapPath("~/Content/images/Carrusel"), fileName);
+                file.SaveAs(path);
+                var detalleCarrusel = new DetalleCarrusel { url = "/Content/images/Carrusel/" + fileName, idCarrusel = carrusel.idCarrusel };
+                db.DetalleCarrusel.Add(detalleCarrusel);
             }
 
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (System.Data.Entity.Infrastructure.DbUpdateException ex)
-            {
-                // Log the error or examine the exception object while debugging
-                var innerException = ex.InnerException?.InnerException;
-                if (innerException != null)
-                {
-                    // Log inner exception details, which often include the actual database error
-                    Console.WriteLine(innerException.Message);
-                }
-                throw; // Re-throw the exception for further handling or logging outside this block
-            }
+            db.SaveChanges();
             return carrusel.idCarrusel;
+        }
+
+        private void UpdateAnuncio(Anuncios existingAnuncio, Anuncios newAnuncio, HttpPostedFileBase ImagenFile, string VideoUrl, bool removeImage, bool removeVideo)
+        {
+            existingAnuncio.titulo = newAnuncio.titulo;
+            existingAnuncio.subtitulo = newAnuncio.subtitulo;
+            existingAnuncio.contenido = newAnuncio.contenido;
+            existingAnuncio.idCategoria = newAnuncio.idCategoria;
+            existingAnuncio.estado = newAnuncio.estado ?? "A";
+
+            if (removeImage)
+            {
+                existingAnuncio.idImagenPrincipal = null;
+            }
+            else if (ImagenFile != null && ImagenFile.ContentLength > 0)
+            {
+                existingAnuncio.idImagenPrincipal = SaveImageToDatabase(ImagenFile, "~/Content/images/Anuncios", "Updated image for " + existingAnuncio.titulo);
+            }
+
+            if (removeVideo)
+            {
+                existingAnuncio.idVideoPrincipal = null;
+            }
+            else if (!string.IsNullOrEmpty(VideoUrl))
+            {
+                existingAnuncio.idVideoPrincipal = SaveVideoToDatabase(VideoUrl);
+            }
+        }
+
+
+
+
+
+
+
+        // CRUD de Categorias
+
+        // Listar Categorias
+        public ActionResult ListarCategorias()
+        {
+            var categorias = db.Categorias.ToList();
+            return View(categorias);
+        }
+
+        // Crear Categoria
+        public ActionResult CrearCategoria()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CrearCategoria(Categorias categoria)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Categorias.Add(categoria);
+                db.SaveChanges();
+                return RedirectToAction("ListarCategorias");
+            }
+            return View(categoria);
+        }
+
+        // Editar Categoria
+        public ActionResult EditarCategoria(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var categoria = db.Categorias.Find(id);
+            if (categoria == null)
+            {
+                return HttpNotFound();
+            }
+            return View(categoria);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditarCategoria(int idCategoria, string nombre)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var db = new Model1())
+                {
+                    var categoria = db.Categorias.Find(idCategoria);
+                    if (categoria == null)
+                    {
+                        return HttpNotFound();
+                    }
+                    categoria.nombre = nombre;
+                    db.SaveChanges();
+                }
+                return RedirectToAction("ListarCategorias");
+            }
+            return View();
         }
 
 

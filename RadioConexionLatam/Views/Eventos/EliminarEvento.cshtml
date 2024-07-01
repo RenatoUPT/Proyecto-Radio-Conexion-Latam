@@ -1,0 +1,99 @@
+﻿@model RadioConexionLatam.Models.Eventos
+@{
+    Layout = null;
+    string userRoleText = ViewBag.UserRole == "1" ? "Administrador" : ViewBag.UserRole == "2" ? "Empleado" : "Desconocido";
+}
+
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="../Content/Usuario/"
+      data-template="vertical-menu-template-free">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Eliminar Evento</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/Content/Usuario/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="~/Content/Usuario/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="~/Content/Usuario/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="~/Content/Usuario/js/config.js"></script>
+</head>
+
+<body>
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="card">
+            <h5 class="card-header">Eliminar Evento</h5>
+            <div class="card-body">
+                <h3>¿Estás seguro de que deseas eliminar este evento?</h3>
+                <div>
+                    <p><strong>Nombre del Evento:</strong> @Model.nombreEvento</p>
+                    <p><strong>Descripción:</strong> @Model.descripcion</p>
+                    <p><strong>Fecha del Evento:</strong> @Model.fechaEvento.ToString("yyyy-MM-dd HH:mm")</p>
+                    <p><strong>Lugar:</strong> @Model.lugar</p>
+                    <p><strong>Organizador:</strong> @Model.organizador</p>
+                    <p><strong>Estado:</strong> @Model.estado</p>
+                    <p><strong>Capacidad:</strong> @Model.capacidad</p>
+                    <p><strong>Categoría:</strong> @Model.Categoria.nombre</p>
+                    @if (Model.Imagen != null)
+                    {
+                        <p><strong>Imagen:</strong></p>
+                        <img src="data:image;base64,@Convert.ToBase64String(Model.Imagen)" alt="Imagen del evento" style="max-width: 200px; max-height: 200px;" />
+                    }
+                </div>
+                @using (Html.BeginForm("EliminarEvento", "Eventos", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.idEvento)
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <a href="@Url.Action("Index", "Eventos")" class="btn btn-secondary">Cancelar</a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Core JS -->
+    <script src="~/Content/Usuario/vendor/libs/jquery/jquery.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/popper/popper.js"></script>
+    <script src="~/Content/Usuario/vendor/js/bootstrap.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/Content/Usuario/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="~/Content/Usuario/vendor/libs/apex-charts/apexcharts.js"></script>
+    <!-- Main JS -->
+    <script src="~/Content/Usuario/js/main.js"></script>
+    <!-- Page JS -->
+    <script src="~/Content/Usuario/js/dashboards-analytics.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

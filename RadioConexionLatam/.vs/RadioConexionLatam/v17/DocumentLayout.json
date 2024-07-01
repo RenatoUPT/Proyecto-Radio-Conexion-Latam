@@ -1,38 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\",
+  "WorkspaceRootPath": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\desktop\\a\\rdc\\radioconexionlatam\\views\\anuncio\\crearanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\crearanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\views\\anuncio\\detallesanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\detallesanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\views\\default\\detallesanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\default\\detallesanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\views\\anuncio\\visualizaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\visualizaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\desktop\\a\\rdc\\radioconexionlatam\\views\\anuncio\\editaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\editaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\desktop\\a\\rdc\\radioconexionlatam\\models\\anuncios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\anuncios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\content\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:content\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\desktop\\a\\rdc\\radioconexionlatam\\models\\carrusel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\carrusel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\models\\detallecarrusel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\detallecarrusel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\legion\\downloads\\radioconexionlatam_pago_integrado\\radioconexionlatam\\models\\anuncios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\anuncios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,106 +70,119 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EditarAnuncio.cshtml",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Views\\Anuncio\\EditarAnuncio.cshtml",
-              "RelativeDocumentMoniker": "Views\\Anuncio\\EditarAnuncio.cshtml",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Views\\Anuncio\\EditarAnuncio.cshtml",
-              "RelativeToolTip": "Views\\Anuncio\\EditarAnuncio.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHIAAAASAAAA",
+              "DocumentIndex": 0,
+              "Title": "DetallesAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAD4v2gAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-30T17:13:58.862Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Carrusel.cs",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\Carrusel.cs",
-              "RelativeDocumentMoniker": "Models\\Carrusel.cs",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\Carrusel.cs",
-              "RelativeToolTip": "Models\\Carrusel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAwCUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T14:14:58.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Anuncios.cs",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\Anuncios.cs",
-              "RelativeDocumentMoniker": "Models\\Anuncios.cs",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\Anuncios.cs",
-              "RelativeToolTip": "Models\\Anuncios.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAmwJ8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T14:31:54.044Z",
+              "WhenOpened": "2024-07-01T19:09:57.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Model1.cs",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\Model1.cs",
-              "RelativeDocumentMoniker": "Models\\Model1.cs",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\Model1.cs",
-              "RelativeToolTip": "Models\\Model1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T08:12:23.525Z",
+              "Title": "Site.css",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Content\\css\\Site.css",
+              "RelativeDocumentMoniker": "Content\\css\\Site.css",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Content\\css\\Site.css",
+              "RelativeToolTip": "Content\\css\\Site.css",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-01T18:23:22.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DetalleCarrusel.cs",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\DetalleCarrusel.cs",
-              "RelativeDocumentMoniker": "Models\\DetalleCarrusel.cs",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Models\\DetalleCarrusel.cs",
-              "RelativeToolTip": "Models\\DetalleCarrusel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-30T08:11:58.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CrearAnuncio.cshtml",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Views\\Anuncio\\CrearAnuncio.cshtml",
-              "RelativeDocumentMoniker": "Views\\Anuncio\\CrearAnuncio.cshtml",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Views\\Anuncio\\CrearAnuncio.cshtml",
-              "RelativeToolTip": "Views\\Anuncio\\CrearAnuncio.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAnAAAA",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "Views\\Default\\Index.cshtml",
+              "ViewState": "AQIAACgAAAAAAAAAAAAIwC4AAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-24T05:18:43.804Z",
+              "WhenOpened": "2024-07-01T17:42:43.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AnuncioController.cs",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Controllers\\AnuncioController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AnuncioController.cs",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Controllers\\AnuncioController.cs",
-              "RelativeToolTip": "Controllers\\AnuncioController.cs",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAqwP4AAAAJAAAA",
+              "Title": "DetallesAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Default\\DetallesAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Default\\DetallesAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Default\\DetallesAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Default\\DetallesAnuncio.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T17:41:46.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DefaultController.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Controllers\\DefaultController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DefaultController.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Controllers\\DefaultController.cs",
+              "RelativeToolTip": "Controllers\\DefaultController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAqwFYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T05:28:39.114Z",
+              "WhenOpened": "2024-07-01T17:38:20.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VisualizarAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAuwPkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T16:18:51.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AnuncioController.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Controllers\\AnuncioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnuncioController.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Controllers\\AnuncioController.cs",
+              "RelativeToolTip": "Controllers\\AnuncioController.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAmwNkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T15:33:17.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Anuncios.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Models\\Anuncios.cs",
+              "RelativeDocumentMoniker": "Models\\Anuncios.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Models\\Anuncios.cs",
+              "RelativeToolTip": "Models\\Anuncios.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwCAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T15:16:17.804Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Views\\Default\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Default\\Index.cshtml",
-              "ToolTip": "C:\\Users\\LEGION\\Desktop\\a\\rdc\\RadioConexionLatam\\Views\\Default\\Index.cshtml",
-              "RelativeToolTip": "Views\\Default\\Index.cshtml",
-              "ViewState": "AQIAABkAAAAAAAAAAAAIwCgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-09T02:03:57.182Z",
+              "Title": "Model1.cs",
+              "DocumentMoniker": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "Models\\Model1.cs",
+              "ToolTip": "C:\\Users\\LEGION\\Downloads\\RadioConexionLatam_PAGO_INTEGRADO\\RadioConexionLatam\\Models\\Model1.cs",
+              "RelativeToolTip": "Models\\Model1.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T15:12:18.15Z",
               "EditorCaption": ""
             }
           ]

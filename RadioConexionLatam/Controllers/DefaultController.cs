@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using System.Data.Entity;
 //FARLEY
 namespace RadioConexionLatam.Controllers
 {
@@ -56,7 +56,12 @@ namespace RadioConexionLatam.Controllers
             Anuncios anuncio;
             using (var db = new Model1())
             {
-                anuncio = db.Anuncios.Find(id);
+                anuncio = db.Anuncios
+                            .Include(a => a.Imagenes)
+                            .Include(a => a.Videos)
+                            .Include(a => a.Carrusel.DetalleCarrusel)
+                            .FirstOrDefault(a => a.idAnuncio == id);
+
                 if (anuncio == null)
                 {
                     return HttpNotFound();
@@ -65,22 +70,24 @@ namespace RadioConexionLatam.Controllers
                 if (anuncio.idImagenPrincipal.HasValue)
                 {
                     anuncio.Imagenes = db.Imagenes.Find(anuncio.idImagenPrincipal.Value);
-                    if (anuncio.Imagenes != null)
-                    {
-                        anuncio.ImagenRuta = anuncio.Imagenes.url;
-                    }
+                    anuncio.ImagenRuta = anuncio.Imagenes != null ? anuncio.Imagenes.url : null;
                 }
 
                 if (anuncio.idVideoPrincipal.HasValue)
                 {
                     anuncio.Videos = db.Videos.Find(anuncio.idVideoPrincipal.Value);
-                    if (anuncio.Videos != null)
+                    anuncio.VideoUrl = anuncio.Videos != null ? anuncio.Videos.url : null;
+                }
+
+                // Assuming the images' URLs are relative to the application's root.
+                if (anuncio.Carrusel != null)
+                {
+                    foreach (var item in anuncio.Carrusel.DetalleCarrusel)
                     {
-                        anuncio.VideoUrl = anuncio.Videos.url;
+                        item.url = Url.Content(item.url);
                     }
                 }
             }
-
             return View(anuncio);
         }
 

@@ -18,19 +18,19 @@ namespace RadioConexionLatam.Models
         }
 
         [Key]
-        public int idCarrusel { get; set; } 
+        public int idCarrusel { get; set; }
 
         [StringLength(100)]
         public string descripcion { get; set; }
 
-        
+
         public virtual ICollection<DetalleCarrusel> DetalleCarrusel { get; set; }
 
-        
+
         public void AddDetalle(DetalleCarrusel detalle)
         {
-            detalle.idCarrusel = this.idCarrusel; 
-            this.DetalleCarrusel.Add(detalle);  
+            detalle.idCarrusel = this.idCarrusel;
+            this.DetalleCarrusel.Add(detalle);
         }
     }
 
