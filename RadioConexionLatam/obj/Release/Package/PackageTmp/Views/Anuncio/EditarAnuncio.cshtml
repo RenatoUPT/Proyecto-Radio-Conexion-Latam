@@ -1,0 +1,168 @@
+﻿@model RadioConexionLatam.Models.Anuncios
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="~/Content/Usuario/" data-template="vertical-menu-template-free">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Editar Anuncio</title>
+    <link rel="icon" type="image/x-icon" href="~/Content/Usuario/img/favicon/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="~/Content/Usuario/css/demo.css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/libs/apex-charts/apex-charts.css" />
+    <script src="~/Content/Usuario/vendor/js/helpers.js"></script>
+    <script src="~/Content/Usuario/js/config.js"></script>
+</head>
+<body>
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <div class="layout-page">
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex align-items-center">
+                                <i class="bx bx-search fs-4 lh-0"></i>
+                                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search..." />
+                            </div>
+                        </div>
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="~/Content/Usuario/img/avatars/1.png" class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="~/Content/Usuario/img/avatars/1.png" class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">Renato Chambilla</span>
+                                                    <small class="text-muted">Administrador</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">Mi Perfil</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Cerrar Sesión</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="content-wrapper">
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <h1>Editar Anuncio</h1>
+                        <div class="card">
+                            <div class="card-body">
+                                @using (Html.BeginForm("EditarAnuncio", "Anuncio", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    @Html.HiddenFor(model => model.idAnuncio)
+
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.titulo, "Titulo del Anuncio", new { @class = "form-label" })
+                                        @Html.TextBoxFor(model => model.titulo, new { @class = "form-control", placeholder = "Ingrese titulo" })
+                                        @Html.ValidationMessageFor(model => model.titulo, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.subtitulo, "Subtítulo del Anuncio", new { @class = "form-label" })
+                                        @Html.TextBoxFor(model => model.subtitulo, new { @class = "form-control", placeholder = "Ingrese subtítulo" })
+                                        @Html.ValidationMessageFor(model => model.subtitulo, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.contenido, "Descripción del Anuncio", new { @class = "form-label" })
+                                        @Html.TextAreaFor(model => model.contenido, new { @class = "form-control", id = "contenido", placeholder = "Ingrese una breve descripción..!" })
+                                        @Html.ValidationMessageFor(model => model.contenido, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.ImagenRuta, "Seleccione una imagen", new { @class = "form-label" })
+                                        <input type="file" name="ImagenFile" id="ImagenFile" class="form-control" />
+                                        @if (Model.ImagenRuta != null)
+                                        {
+                                            <img src="@Model.ImagenRuta" style="max-width: 100px; max-height: 100px;" />
+                                        }
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="SinImagen" id="SinImagen" />
+                                            <label class="form-check-label" for="SinImagen">Eliminar Imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.VideoUrl, "Video del Anuncio (URL)", new { @class = "form-label" })
+                                        @Html.TextBoxFor(model => model.VideoUrl, new { @class = "form-control", placeholder = "Ingrese URL del video" })
+                                        @Html.ValidationMessageFor(model => model.VideoUrl, "", new { @class = "text-danger" })
+                                        @if (Model.VideoUrl != null)
+                                        {
+                                            <iframe width="560" height="315" src="@Model.VideoUrl.Replace("watch?v=", "embed/")" frameborder="0" allowfullscreen></iframe>
+                                        }
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="SinVideo" id="SinVideo" />
+                                            <label class="form-check-label" for="SinVideo">Eliminar Video</label>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.idCategoria, "Categoría", new { @class = "form-label" })
+                                        @Html.DropDownListFor(model => model.idCategoria, ViewBag.Categorias as SelectList, "Seleccione una categoría", new { @class = "form-control" })
+                                    </div>
+                                    <div class="mb-3">
+                                        @Html.LabelFor(model => model.estado, "Estado del Anuncio", new { @class = "form-label" })
+                                        @Html.DropDownListFor(model => model.estado, new SelectList(new List<SelectListItem> {
+                                            new SelectListItem { Text = "Activo", Value = "A" },
+                                            new SelectListItem { Text = "Inactivo", Value = "I" }
+                                        }, "Value", "Text"), "Seleccione el estado", new { @class = "form-control" })
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Guardar</button>
+                                    <a href="@Url.Action("VisualizarAnuncio", "Anuncio")" class="btn btn-secondary">Cancelar</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-backdrop fade"></div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Content/Usuario/vendor/libs/jquery/jquery.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/popper/popper.js"></script>
+    <script src="~/Content/Usuario/vendor/js/bootstrap.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/Content/Usuario/vendor/js/menu.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="~/Content/Usuario/js/main.js"></script>
+    <script src="~/Content/Usuario/js/dashboards-analytics.js"></script>
+</body>
+</html>

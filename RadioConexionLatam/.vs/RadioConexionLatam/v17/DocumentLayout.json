@@ -1,0 +1,789 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\views\\eventos\\vistapublicitaria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\eventos\\vistapublicitaria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\controllers\\eventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\eventoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\eventos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\eventos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\eventos\\crearevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\eventos\\crearevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\eventos\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\eventos\\editarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\eventos\\eliminarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\eventos\\eliminarevento.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\views\\shared\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\shared\\layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\imagenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\defaultcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\anuncios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\anuncios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\controllers\\programacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\programacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\controllers\\internacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\internacionalescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:controllers\\anunciocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\videos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\videos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\programacionsemanal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\programacionsemanal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\model1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\models\\internacionales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\internacionales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\enlacesrelacionados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\enlacesrelacionados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\models\\culqiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:models\\culqiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|c:\\users\\usuario\\desktop\\radioconexionlatam\\views\\internacionales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\internacionales\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\login\\paneladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\login\\paneladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\usuario\\visualizarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\usuario\\visualizarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\usuario\\editarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\usuario\\editarusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\usuario\\crearusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\usuario\\crearusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\programacion\\visualizarprogramacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\programacion\\visualizarprogramacion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\programacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\programacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\programacion\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\programacion\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\programacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\programacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\programacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\programacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\visualizaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\visualizaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\listarcategorias.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\listarcategorias.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\editarcategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\editarcategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\editaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\editaranuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\detallesanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\detallesanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\crearcategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\crearcategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\views\\anuncio\\crearanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5B925D2F-A07D-4033-9BBE-D20AEB6335E1}|RadioConexionLatam.csproj|solutionrelative:views\\anuncio\\crearanuncio.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VistaPublicitaria.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\VistaPublicitaria.cshtml",
+              "RelativeDocumentMoniker": "Views\\Eventos\\VistaPublicitaria.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\VistaPublicitaria.cshtml",
+              "RelativeToolTip": "Views\\Eventos\\VistaPublicitaria.cshtml",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAuwI0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T00:40:02.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Eventos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\Index.cshtml",
+              "RelativeToolTip": "Views\\Eventos\\Index.cshtml",
+              "ViewState": "AQIAADMBAAAAAAAAAAAiwDwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:09:13.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\EventosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventosController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\EventosController.cs",
+              "RelativeToolTip": "Controllers\\EventosController.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAqwIgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:26:12.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwC0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T05:07:44.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CrearEvento.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\CrearEvento.cshtml",
+              "RelativeDocumentMoniker": "Views\\Eventos\\CrearEvento.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\CrearEvento.cshtml",
+              "RelativeToolTip": "Views\\Eventos\\CrearEvento.cshtml",
+              "ViewState": "AQIAADEBAAAAAAAAAAAAAFIBAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:08:40.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditarEvento.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\EditarEvento.cshtml",
+              "RelativeDocumentMoniker": "Views\\Eventos\\EditarEvento.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\EditarEvento.cshtml",
+              "RelativeToolTip": "Views\\Eventos\\EditarEvento.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:27:11.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EliminarEvento.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\EliminarEvento.cshtml",
+              "RelativeDocumentMoniker": "Views\\Eventos\\EliminarEvento.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Eventos\\EliminarEvento.cshtml",
+              "RelativeToolTip": "Views\\Eventos\\EliminarEvento.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAYwGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:27:15.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Eventos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Eventos.cs",
+              "RelativeDocumentMoniker": "Models\\Eventos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Eventos.cs",
+              "RelativeToolTip": "Models\\Eventos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:22:18.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:26:47.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Shared\\Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Layout.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Shared\\Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Layout.cshtml",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-01T01:07:34.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Anuncios.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Anuncios.cs",
+              "RelativeDocumentMoniker": "Models\\Anuncios.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Anuncios.cs",
+              "RelativeToolTip": "Models\\Anuncios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:23:04.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProgramacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\ProgramacionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProgramacionController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\ProgramacionController.cs",
+              "RelativeToolTip": "Controllers\\ProgramacionController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:26:39.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\PagoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\PagoController.cs",
+              "RelativeToolTip": "Controllers\\PagoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:26:31.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Imagenes.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Imagenes.cs",
+              "RelativeDocumentMoniker": "Models\\Imagenes.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Imagenes.cs",
+              "RelativeToolTip": "Models\\Imagenes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:23:37.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DefaultController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\DefaultController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DefaultController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\DefaultController.cs",
+              "RelativeToolTip": "Controllers\\DefaultController.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAiwGQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:26:06.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "InternacionalesController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\InternacionalesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InternacionalesController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\InternacionalesController.cs",
+              "RelativeToolTip": "Controllers\\InternacionalesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:18:24.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T04:39:33.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Videos.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Videos.cs",
+              "RelativeDocumentMoniker": "Models\\Videos.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Videos.cs",
+              "RelativeToolTip": "Models\\Videos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:24:54.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Models\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Usuarios.cs",
+              "RelativeToolTip": "Models\\Usuarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:24:46.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AnuncioController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\AnuncioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AnuncioController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Controllers\\AnuncioController.cs",
+              "RelativeToolTip": "Controllers\\AnuncioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T18:32:48.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Roles.cs",
+              "RelativeDocumentMoniker": "Models\\Roles.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Roles.cs",
+              "RelativeToolTip": "Models\\Roles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:24:31.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProgramacionSemanal.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\ProgramacionSemanal.cs",
+              "RelativeDocumentMoniker": "Models\\ProgramacionSemanal.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\ProgramacionSemanal.cs",
+              "RelativeToolTip": "Models\\ProgramacionSemanal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:24:10.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Model1.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Model1.cs",
+              "RelativeDocumentMoniker": "Models\\Model1.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Model1.cs",
+              "RelativeToolTip": "Models\\Model1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:23:59.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "Models\\Login.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Login.cs",
+              "RelativeToolTip": "Models\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:23:52.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Internacionales.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Internacionales.cs",
+              "RelativeDocumentMoniker": "Models\\Internacionales.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\Internacionales.cs",
+              "RelativeToolTip": "Models\\Internacionales.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T17:17:57.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EnlacesRelacionados.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\EnlacesRelacionados.cs",
+              "RelativeDocumentMoniker": "Models\\EnlacesRelacionados.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\EnlacesRelacionados.cs",
+              "RelativeToolTip": "Models\\EnlacesRelacionados.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:23:28.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CulqiService.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\CulqiService.cs",
+              "RelativeDocumentMoniker": "Models\\CulqiService.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Models\\CulqiService.cs",
+              "RelativeToolTip": "Models\\CulqiService.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-01T00:23:23.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAkwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-27T04:46:33.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Internacionales\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Internacionales\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Internacionales\\Index.cshtml",
+              "RelativeToolTip": "Views\\Internacionales\\Index.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAIwGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:18:35.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VisualizarUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Usuario\\VisualizarUsuario.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\VisualizarUsuario.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Usuario\\VisualizarUsuario.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\VisualizarUsuario.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAwwE4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:12:17.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "EditarUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Usuario\\EditarUsuario.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\EditarUsuario.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Usuario\\EditarUsuario.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\EditarUsuario.cshtml",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAswD4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:12:03.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CrearUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Usuario\\CrearUsuario.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuario\\CrearUsuario.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Usuario\\CrearUsuario.cshtml",
+              "RelativeToolTip": "Views\\Usuario\\CrearUsuario.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAwwE4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:11:47.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "VisualizarProgramacion.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\VisualizarProgramacion.cshtml",
+              "RelativeDocumentMoniker": "Views\\Programacion\\VisualizarProgramacion.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\VisualizarProgramacion.cshtml",
+              "RelativeToolTip": "Views\\Programacion\\VisualizarProgramacion.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAwwE4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:10:33.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Programacion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Index.cshtml",
+              "RelativeToolTip": "Views\\Programacion\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:10:26.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Programacion\\Eliminar.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Eliminar.cshtml",
+              "RelativeToolTip": "Views\\Programacion\\Eliminar.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:10:21.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Programacion\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Programacion\\Editar.cshtml",
+              "ViewState": "AQIAACkAAAAAAAAAAAAswD4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:10:16.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Programacion\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Programacion\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Programacion\\Crear.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAwwE4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:10:06.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "VisualizarAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\VisualizarAnuncio.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAswFIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:07:25.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "EditarAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\EditarAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\EditarAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\EditarAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\EditarAnuncio.cshtml",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAAAEsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:06:52.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "DetallesAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\DetallesAnuncio.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:06:10.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CrearAnuncio.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\CrearAnuncio.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\CrearAnuncio.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\CrearAnuncio.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\CrearAnuncio.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAE4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T04:04:23.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PanelAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Login\\PanelAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\PanelAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Login\\PanelAdmin.cshtml",
+              "RelativeToolTip": "Views\\Login\\PanelAdmin.cshtml",
+              "ViewState": "AQIAAAQBAAAAAAAAAAAAANkAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T03:56:10.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CrearCategoria.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\CrearCategoria.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\CrearCategoria.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\CrearCategoria.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\CrearCategoria.cshtml",
+              "ViewState": "AQIAADkAAAAAAAAAAAAswE4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T18:18:04.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EditarCategoria.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\EditarCategoria.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\EditarCategoria.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\EditarCategoria.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\EditarCategoria.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAswE4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T18:34:58.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAADwv0QAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T18:18:24.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ListarCategorias.cshtml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\ListarCategorias.cshtml",
+              "RelativeDocumentMoniker": "Views\\Anuncio\\ListarCategorias.cshtml",
+              "ToolTip": "C:\\Users\\Usuario\\Desktop\\RadioConexionLatam\\Views\\Anuncio\\ListarCategorias.cshtml",
+              "RelativeToolTip": "Views\\Anuncio\\ListarCategorias.cshtml",
+              "ViewState": "AQIAADcAAAAAAAAAAAAswEMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T18:11:19.451Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

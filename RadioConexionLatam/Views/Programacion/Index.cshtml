@@ -1,0 +1,121 @@
+﻿@model IEnumerable<RadioConexionLatam.Models.ProgramacionSemanal>
+@{
+    Layout = "~/Views/Shared/Layout.cshtml";
+    var horas = ViewBag.Horas as List<int>;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Programación Semanal</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .table thead {
+            background-color: #ff99cc;
+            color: #fff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #ffe6f2;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #ffd6e7;
+        }
+
+        .program-info {
+            font-size: 12px;
+            color: #555;
+        }
+
+            .program-info small {
+                display: block;
+            }
+
+        .anime-theme {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #ff3399;
+        }
+
+        .btn-primary {
+            background-color: #ff3399;
+            border-color: #ff3399;
+        }
+
+            .btn-primary:hover {
+                background-color: #e60073;
+                border-color: #e60073;
+            }
+
+        .header-title {
+            color: #ff3399;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        .footer {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center header-title">Programación Semanal</h2>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Horario</th>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miércoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+                    <th scope="col">Sábado</th>
+                    <th scope="col">Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var hora in horas)
+                {
+                    <tr>
+                        <td class="anime-theme">@hora:00</td>
+                        @foreach (var dia in new[] { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" })
+                        {
+                            var programa = Model.FirstOrDefault(p => p.Hora == hora.ToString() && p.Dia == dia);
+                            <td class="anime-theme">
+                                @if (programa != null)
+                                {
+                                    <div><strong>@programa.NombrePrograma</strong></div>
+                                    <div class="program-info">
+                                        <small>Encargado: @programa.Usuario.nombre @programa.Usuario.apellido</small>
+                                        <small>Categoría: @programa.Categoria.nombre</small>
+                                    </div>
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="text-center mt-4">
+            <a href="@Url.Action("Crear", "Programacion")" class="btn btn-primary">Añadir Programa</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

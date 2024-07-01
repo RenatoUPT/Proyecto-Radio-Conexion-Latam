@@ -1,0 +1,154 @@
+﻿@model RadioConexionLatam.Models.Eventos
+@{
+    Layout = null;
+    string userRoleText = ViewBag.UserRole == "1" ? "Administrador" : ViewBag.UserRole == "2" ? "Empleado" : "Desconocido";
+}
+
+<html lang="en"
+      class="light-style layout-menu-fixed"
+      dir="ltr"
+      data-theme="theme-default"
+      data-assets-path="../Content/Usuario/"
+      data-template="vertical-menu-template-free">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Editar Evento</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="~/Content/Usuario/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"
+          rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/fonts/boxicons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="~/Content/Usuario/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="~/Content/Usuario/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="~/Content/Usuario/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="~/Content/Usuario/js/config.js"></script>
+</head>
+
+<body>
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="card">
+            <h5 class="card-header">Editar Evento</h5>
+            <div class="card-body">
+                @using (Html.BeginForm("EditarEvento", "Eventos", FormMethod.Post, new { @class = "form-horizontal", role = "form", enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    @Html.HiddenFor(model => model.idEvento)
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.nombreEvento)
+                        @Html.EditorFor(model => model.nombreEvento, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.nombreEvento, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.descripcion)
+                        @Html.EditorFor(model => model.descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.descripcion, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.fechaEvento)
+                        @Html.EditorFor(model => model.fechaEvento, new { htmlAttributes = new { @class = "form-control", type = "datetime-local" } })
+                        @Html.ValidationMessageFor(model => model.fechaEvento, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.lugar)
+                        @Html.EditorFor(model => model.lugar, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.lugar, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.organizador)
+                        @Html.EditorFor(model => model.organizador, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.organizador, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.estado)
+                        @Html.DropDownListFor(model => model.estado, new SelectList(new[] { "A", "I" }), "Seleccione un estado", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.estado, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.capacidad)
+                        @Html.EditorFor(model => model.capacidad, new { htmlAttributes = new { @class = "form-control", type = "number", min = "1" } })
+                        @Html.ValidationMessageFor(model => model.capacidad, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.LabelFor(model => model.idCategoria, "Categoría")
+                        @Html.DropDownListFor(model => model.idCategoria, (SelectList)ViewBag.idCategoria, "Seleccione una categoría", new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.idCategoria, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.Label("Imagen actual", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @if (Model.Imagen != null)
+                            {
+                                <img src="data:image;base64,@Convert.ToBase64String(Model.Imagen)" alt="Imagen del evento" style="max-width: 200px; max-height: 200px;" />
+                            }
+                            else
+                            {
+                                <p>No hay imagen disponible</p>
+                            }
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        @Html.Label("Nueva Imagen", htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="file" name="ImagenFile" class="form-control" />
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Guardar Cambios</button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Core JS -->
+    <script src="~/Content/Usuario/vendor/libs/jquery/jquery.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/popper/popper.js"></script>
+    <script src="~/Content/Usuario/vendor/js/bootstrap.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/Content/Usuario/vendor/js/menu.js"></script>
+    <!-- Vendors JS -->
+    <script src="~/Content/Usuario/vendor/libs/apex-charts/apexcharts.js"></script>
+    <!-- Main JS -->
+    <script src="~/Content/Usuario/js/main.js"></script>
+    <!-- Page JS -->
+    <script src="~/Content/Usuario/js/dashboards-analytics.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

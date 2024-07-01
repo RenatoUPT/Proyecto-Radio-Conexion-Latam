@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - MiRadioWeb</title>
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/Site.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>
+        <div class="text-center" style="background-color: #6422df;">
+            <img src="~/Content/images/logo.png" alt="Logo de Radio Conexion LATAM" class="logo">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg-color">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Default/Index">NOTICIAS</a>
+                        </li>
+                        <li class="nav-item px-2">|</li> <!-- Separador -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Internacionales/Index">INTERNACIONALES</a>
+                        </li>
+                        <li class="nav-item px-2">|</li> <!-- Separador -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Programacion/Index">PROGRAMACION</a>
+                        </li>
+                        <li class="nav-item px-2">|</li> <!-- Separador -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Default/Nosotros">¿QUIÉNES SOMOS?</a>
+                        </li>
+                        <li class="nav-item px-2">|</li> <!-- Separador -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="~/Pago">PASARELA DE PAGO</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <audio controls class="custom-audio-player">
+                                <source src="https://stream-170.zeno.fm/yxynr8zy71zuv?zs=CBt9_4NJR0S-g7RGQMMwYA" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        @RenderBody()
+    </main>
+    <div class="container-fluid py-5" style="background: linear-gradient(135deg, #6422df, #ec008c);">
+        <div class="container text-black">
+            <h4 class="text-center mb-4" style="color: white; font-weight: bold; text-shadow: 2px 2px 4px #000;">Descubre más en nuestras plataformas</h4>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <h5 style="color: white;"><i class="fab fa-spotify fa-2x"></i> Escúchanos:</h5>
+                    <a href="https://goo.su/AEtL" class="text-white d-block"><i class="fab fa-spotify"></i> Spotify</a>
+                    <a href="#" class="text-white d-block"><i class="fab fa-apple"></i> Apple Podcasts</a>
+                    <a href="https://www.mixcloud.com/radioconexion/" class="text-white d-block"><i class="fas fa-cloud"></i> Mixcloud</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 style="color: white;"><i class="fas fa-users fa-2x"></i> Síguenos:</h5>
+                    <a href="https://www.facebook.com/radioconexionLATAM" class="text-white d-block"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com/radioconexion_latam/" class="text-white d-block"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="text-white d-block"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.youtube.com/channel/UCCVlwnb2MW6nnhGVYr7vHVg" class="text-white d-block"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 style="color: white;"><i class="fas fa-comments fa-2x"></i> Comunícate:</h5>
+                    <a href="https://api.whatsapp.com/send?phone=51936030586&text=Hola!%20Bienvenido%20a%20Radio%20Conexi%C3%B3n%20LATAM!%20%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte%20o%20brindarte%20info%20sobre%20alguna%20de%20nuestras%20actividades%3F" class="text-white d-block"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="https://discord.com/invite/CZmzfgjSYE" class="text-white d-block"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer text-center text-white" style="background-color: #333;">
+        <p>&copy; @DateTime.Now.Year - Radio Conexion LATAM</p>
+    </footer>
+    <script src="~/Content/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

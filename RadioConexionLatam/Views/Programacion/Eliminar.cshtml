@@ -1,0 +1,72 @@
+﻿@model RadioConexionLatam.Models.ProgramacionSemanal
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Eliminar Programación Semanal</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="card">
+                <div class="table-responsive text-nowrap">
+                    <div class="container mt-5">
+                        <div class="card-header">
+                            <h4 class="card-title">Eliminar Programación Semanal</h4>
+                        </div>
+                        <div class="card-body">
+                            @using (Html.BeginForm("EliminarConfirmar", "Programacion", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.HiddenFor(model => model.Id)
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Id, "ID")
+                                    <div class="form-control">@Model.Id</div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Dia, "Día")
+                                    <div class="form-control">@Model.Dia</div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Hora, "Hora")
+                                    <div class="form-control">@Model.Hora</div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.NombrePrograma, "Nombre del Programa")
+                                    <div class="form-control">@Model.NombrePrograma</div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.idUsuario, "Usuario")
+                                    <div class="form-control">@Model.idUsuario</div>
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.idCategoria, "Categoría")
+                                    <div class="form-control">@Model.idCategoria</div>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-backdrop fade"></div>
+    </div>
+    <div class="layout-overlay layout-menu-toggle"></div>
+
+    <script src="~/Content/Usuario/vendor/libs/jquery/jquery.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/popper/popper.js"></script>
+    <script src="~/Content/Usuario/vendor/js/bootstrap.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="~/Content/Usuario/vendor/js/menu.js"></script>
+    <script src="~/Content/Usuario/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="~/Content/Usuario/js/main.js"></script>
+    <script src="~/Content/Usuario/js/dashboards-analytics.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

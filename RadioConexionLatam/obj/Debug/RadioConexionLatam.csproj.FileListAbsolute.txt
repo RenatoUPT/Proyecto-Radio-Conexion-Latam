@@ -1,0 +1,480 @@
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\RadioConexionLatam.dll.config
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\RadioConexionLatam.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\RadioConexionLatam.pdb
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\csc.exe
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\csc.exe.config
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\csc.rsp
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\csi.exe
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\csi.exe.config
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\csi.rsp
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.AppContext.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Console.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.IO.Compression.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Net.Http.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Net.Sockets.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.ValueTuple.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\vbc.exe
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\vbc.exe.config
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\vbc.rsp
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Helpers.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Mvc.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Razor.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Webpages.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Webpages.Razor.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Razor.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Webpages.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Webpages.Razor.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Helpers.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\System.Web.Mvc.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.AssemblyReference.cache
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.CoreCompileInputs.cache
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\obj\Debug\RadioCon.F29C8CAA.Up2Date
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\obj\Debug\RadioConexionLatam.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\obj\Debug\RadioConexionLatam.pdb
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\RadioConexionLatam.dll.config
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\RadioConexionLatam.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\RadioConexionLatam.pdb
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\csc.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\csc.rsp
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\csi.exe
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\csi.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\csi.rsp
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.AppContext.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Console.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.IO.Compression.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Net.Http.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.ValueTuple.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\vbc.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\vbc.rsp
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Helpers.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Mvc.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Razor.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Webpages.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Webpages.Razor.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Razor.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Webpages.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Webpages.Razor.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Helpers.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\System.Web.Mvc.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\obj\Debug\RadioCon.F29C8CAA.Up2Date
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\obj\Debug\RadioConexionLatam.dll
+C:\Users\Usuario\Desktop\RadioConexionLatamV1\RadioConexionLatam\obj\Debug\RadioConexionLatam.pdb
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\EntityFramework.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\EntityFramework.SqlServer.dll
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\EntityFramework.xml
+C:\Users\LEGION\Desktop\a\RadioConexionLatam\bin\EntityFramework.SqlServer.xml
+D:\DESCARGAS\RadioConexionLatam\bin\RadioConexionLatam.dll.config
+D:\DESCARGAS\RadioConexionLatam\bin\RadioConexionLatam.dll
+D:\DESCARGAS\RadioConexionLatam\bin\RadioConexionLatam.pdb
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\csc.exe
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\csc.exe.config
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\csc.rsp
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\csi.exe
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\csi.exe.config
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\csi.rsp
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.AppContext.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Collections.Immutable.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Console.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Globalization.Calendars.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.IO.Compression.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Net.Http.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Net.Sockets.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Reflection.Metadata.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.ValueTuple.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Xml.XmlDocument.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Xml.XPath.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\vbc.exe
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\vbc.exe.config
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\vbc.rsp
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe
+D:\DESCARGAS\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe.config
+D:\DESCARGAS\RadioConexionLatam\bin\EntityFramework.dll
+D:\DESCARGAS\RadioConexionLatam\bin\EntityFramework.SqlServer.dll
+D:\DESCARGAS\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DESCARGAS\RadioConexionLatam\bin\Microsoft.Web.Infrastructure.dll
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Helpers.dll
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Mvc.dll
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Razor.dll
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Webpages.Deployment.dll
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Webpages.dll
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Webpages.Razor.dll
+D:\DESCARGAS\RadioConexionLatam\bin\EntityFramework.xml
+D:\DESCARGAS\RadioConexionLatam\bin\EntityFramework.SqlServer.xml
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Razor.xml
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Webpages.xml
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Webpages.Deployment.xml
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Webpages.Razor.xml
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Helpers.xml
+D:\DESCARGAS\RadioConexionLatam\bin\System.Web.Mvc.xml
+D:\DESCARGAS\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DESCARGAS\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.AssemblyReference.cache
+D:\DESCARGAS\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.CoreCompileInputs.cache
+D:\DESCARGAS\RadioConexionLatam\obj\Debug\RadioCon.F29C8CAA.Up2Date
+D:\DESCARGAS\RadioConexionLatam\obj\Debug\RadioConexionLatam.dll
+D:\DESCARGAS\RadioConexionLatam\obj\Debug\RadioConexionLatam.pdb
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\RadioConexionLatam.dll.config
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\RadioConexionLatam.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\RadioConexionLatam.pdb
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\csc.exe
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\csc.exe.config
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\csc.rsp
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\csi.exe
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\csi.exe.config
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\csi.rsp
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.AppContext.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Console.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.IO.Compression.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Net.Http.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Net.Sockets.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.ValueTuple.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\vbc.exe
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\vbc.exe.config
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\vbc.rsp
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\EntityFramework.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\EntityFramework.SqlServer.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Helpers.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Mvc.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Razor.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Webpages.Deployment.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Webpages.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Webpages.Razor.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\EntityFramework.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\EntityFramework.SqlServer.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Razor.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Webpages.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Webpages.Deployment.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Webpages.Razor.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Helpers.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\System.Web.Mvc.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.AssemblyReference.cache
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.CoreCompileInputs.cache
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\obj\Debug\RadioCon.F29C8CAA.Up2Date
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\obj\Debug\RadioConexionLatam.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\obj\Debug\RadioConexionLatam.pdb
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\Newtonsoft.Json.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\RestSharp.dll
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\Newtonsoft.Json.xml
+C:\Users\LEGION\Desktop\a\rdc\RadioConexionLatam\bin\RestSharp.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\RadioConexionLatam.dll.config
+D:\RADIO SCRAP\RadioConexionLatam\bin\RadioConexionLatam.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\RadioConexionLatam.pdb
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\csc.exe
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\csc.exe.config
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\csc.rsp
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\csi.exe
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\csi.exe.config
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\csi.rsp
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.Managed.Core.targets
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.AppContext.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Collections.Immutable.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Console.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Globalization.Calendars.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.IO.Compression.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Net.Http.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Net.Sockets.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Reflection.Metadata.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.ValueTuple.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Xml.XmlDocument.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Xml.XPath.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\vbc.exe
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\vbc.exe.config
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\vbc.rsp
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe
+D:\RADIO SCRAP\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe.config
+D:\RADIO SCRAP\RadioConexionLatam\bin\Antlr3.Runtime.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\EntityFramework.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\EntityFramework.SqlServer.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\HtmlAgilityPack.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\Microsoft.Web.Infrastructure.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\Newtonsoft.Json.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\RestSharp.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Helpers.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Mvc.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Optimization.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Razor.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Webpages.Deployment.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Webpages.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Webpages.Razor.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\WebGrease.dll
+D:\RADIO SCRAP\RadioConexionLatam\bin\Antlr3.Runtime.pdb
+D:\RADIO SCRAP\RadioConexionLatam\bin\EntityFramework.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\EntityFramework.SqlServer.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\HtmlAgilityPack.pdb
+D:\RADIO SCRAP\RadioConexionLatam\bin\HtmlAgilityPack.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\Newtonsoft.Json.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\RestSharp.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Optimization.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Razor.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Webpages.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Webpages.Deployment.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Webpages.Razor.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Helpers.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\System.Web.Mvc.xml
+D:\RADIO SCRAP\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RADIO SCRAP\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.AssemblyReference.cache
+D:\RADIO SCRAP\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.CoreCompileInputs.cache
+D:\RADIO SCRAP\RadioConexionLatam\obj\Debug\RadioCon.F29C8CAA.Up2Date
+D:\RADIO SCRAP\RadioConexionLatam\obj\Debug\RadioConexionLatam.dll
+D:\RADIO SCRAP\RadioConexionLatam\obj\Debug\RadioConexionLatam.pdb
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\RadioConexionLatam.dll.config
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\RadioConexionLatam.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\RadioConexionLatam.pdb
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\csc.exe
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\csc.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\csc.rsp
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\csi.exe
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\csi.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\csi.rsp
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.AppContext.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Console.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.IO.Compression.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Net.Http.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.ValueTuple.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\vbc.exe
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\vbc.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\vbc.rsp
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Antlr3.Runtime.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\EntityFramework.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\HtmlAgilityPack.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\RestSharp.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Helpers.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Mvc.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Optimization.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Razor.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Webpages.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Webpages.Razor.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\WebGrease.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Antlr3.Runtime.pdb
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\EntityFramework.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\HtmlAgilityPack.pdb
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\HtmlAgilityPack.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Newtonsoft.Json.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\RestSharp.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Optimization.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Razor.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Webpages.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Webpages.Razor.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Helpers.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\System.Web.Mvc.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Usuario\Desktop\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\RadioConexionLatam\obj\Debug\RadioConexionLatam.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\RadioConexionLatam\obj\Debug\RadioCon.F29C8CAA.Up2Date
+C:\Users\Usuario\Desktop\RadioConexionLatam\obj\Debug\RadioConexionLatam.dll
+C:\Users\Usuario\Desktop\RadioConexionLatam\obj\Debug\RadioConexionLatam.pdb
