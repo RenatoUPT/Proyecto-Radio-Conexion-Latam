@@ -1,19 +1,15 @@
 ﻿using RadioConexionLatam.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Threading.Tasks;
 using System.Web.Mvc;
 
-//FARLEY
 namespace RadioConexionLatam.Controllers
 {
     public class DefaultController : Controller
     {
-        private Anuncios objAnuncios = new Anuncios();
-
         // GET: Default
-        public ActionResult Index(string Buscar)
+        public async Task<ActionResult> Index(string Buscar)
         {
             List<Anuncios> anuncios;
             using (var db = new Model1())
@@ -33,7 +29,6 @@ namespace RadioConexionLatam.Controllers
                                  .ToList();
                 }
 
-
                 foreach (var anuncio in anuncios)
                 {
                     if (anuncio.idImagenPrincipal.HasValue)
@@ -46,9 +41,13 @@ namespace RadioConexionLatam.Controllers
                     }
                 }
             }
+
+            // Obtener las últimas canciones usando web scraping
+            var ultimasCanciones = await Internacionales.ObtenerUltimasCancionesAsync();
+            ViewBag.UltimasCanciones = ultimasCanciones;
+
             return View(anuncios);
         }
-
 
         // Vista de detalles
         public ActionResult DetallesAnuncio(int id)
@@ -84,18 +83,14 @@ namespace RadioConexionLatam.Controllers
             return View(anuncio);
         }
 
-
-
         public ActionResult Nosotros()
         {
-                      
             return View();
         }
+
         public ActionResult Programacion()
         {
-
             return View();
         }
-
     }
 }

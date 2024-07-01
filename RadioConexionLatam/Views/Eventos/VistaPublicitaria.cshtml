@@ -105,16 +105,17 @@
     </style>
 }
 
-<div class="eventos-container">
-    @foreach (var evento in Model.Where(e => e.estado == "A"))
-    {
-        <div class="evento-publicitario">
-            @if (evento.Imagen != null)
-            {
-                <div class="imagen">
-                    <img src="data:image;base64,@Convert.ToBase64String(evento.Imagen)" alt="Imagen del evento" />
-                </div>
-            }
+<div class="jumbotron">
+    <div class="eventos-container">
+        @foreach (var evento in Model.Where(e => e.estado == "A"))
+        {
+            <div class="evento-publicitario">
+                @if (evento.Imagen != null)
+                {
+                    <div class="imagen">
+                        <img src="data:image;base64,@Convert.ToBase64String(evento.Imagen)" alt="Imagen del evento" />
+                    </div>
+                }
             <div class="info">
                 <h2>@evento.nombreEvento</h2>
                 <p>@evento.descripcion</p>
@@ -123,19 +124,58 @@
                 <p><strong>Lugar:</strong> @evento.lugar</p>
                 <p><strong>Organizador:</strong> @evento.organizador</p>
             </div>
-            <div class="entradas">
-                <h3>Entradas</h3>
-                <ul>
-                    <li><strong>Preferencial:</strong> S/ 136.00</li>
-                </ul>
+                <div class="entradas">
+                    <h3>Entradas</h3>
+                    <ul>
+                        <li><strong>Preferencial:</strong> USD 25.00</li>
+                    </ul>
+                </div>           
+                <div class="comprar">
+                    <button onclick="pagar('@evento.nombreEvento', 25.00)"><i class="fab fa-paypal"></i>Comprar ahora</button>
+                </div>
+                <div class="extra-info">
+                    <p>* Te informamos que tus datos personales serán compartidos con el organizador del evento.</p>
+                    <p>* Apto para menores de 18 años en compañía de un adulto.</p>
+                </div>
             </div>
-            <div class="comprar">
-                <button>Comprar ahora</button>
-            </div>
-            <div class="extra-info">
-                <p>* Te informamos que tus datos personales serán compartidos con el organizador del evento.</p>
-                <p>* Apto para menores de 18 años en compañía de un adulto.</p>
-            </div>
-        </div>
-    }
+        }
+    </div>
 </div>
+@section scripts{
+    <script>
+        function pagar(producto, precio) {
+            var body = {
+                precio: precio,
+                producto: producto
+            };
+
+            jQuery.ajax({
+                url: '@Url.Action("Paypal", "Eventos")',
+                type: "POST",
+                data: JSON.stringify(body),
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    console.log(data);
+                    $("div.jumbotron").LoadingOverlay("hide");
+
+                    if (data.status) {
+                        var jsonresult = JSON.parse(data.respuesta);
+                        var links = jsonresult.links;
+                        var resultado = links.find(item => item.rel === "approve");
+                        window.location.href = resultado.href;
+                    } else {
+                        alert("Hubo un problema al procesar el pago. Por favor, inténtelo más tarde.");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr.responseText);
+                    alert("Error: " + error);
+                },
+                beforeSend: function () {
+                    $("div.jumbotron").LoadingOverlay("show");
+                }
+            });
+        }
+    </script>
+}

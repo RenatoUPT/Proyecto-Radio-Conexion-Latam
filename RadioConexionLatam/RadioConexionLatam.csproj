@@ -233,7 +233,20 @@
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery-3.7.1.min.js" />
+    <Content Include="Content\videofondo\Paisaje Anime 4K.mp4" />
+    <Content Include="Content\videofondo\Ultra Instinto 1.mp4" />
+    <Content Include="Content\videofondo\Ultra Instinto.mp4" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -243,7 +256,6 @@
     <Compile Include="Controllers\EventosController.cs" />
     <Compile Include="Controllers\InternacionalesController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
-    <Compile Include="Controllers\PagoController.cs" />
     <Compile Include="Controllers\ProgramacionController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
@@ -251,13 +263,14 @@
     </Compile>
     <Compile Include="Models\Anuncios.cs" />
     <Compile Include="Models\Categorias.cs" />
-    <Compile Include="Models\CulqiService.cs" />
     <Compile Include="Models\EnlacesRelacionados.cs" />
     <Compile Include="Models\Eventos.cs" />
     <Compile Include="Models\Imagenes.cs" />
     <Compile Include="Models\Internacionales.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\Paypal_Order\PaypalOrder.cs" />
+    <Compile Include="Models\Paypal_Transaction\PaypalTransaction.cs" />
     <Compile Include="Models\ProgramacionSemanal.cs" />
     <Compile Include="Models\Roles.cs" />
     <Compile Include="Models\Usuarios.cs" />
@@ -287,8 +300,6 @@
     <None Include="Properties\PublishProfiles\RadioConexionLatam - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\RadioConexionLatam - Web Deploy.pubxml" />
     <Content Include="Views\Default\Nosotros.cshtml" />
-    <Content Include="Views\Default\Programacion.cshtml" />
-    <Content Include="Views\Pago\Index.cshtml" />
     <Content Include="Views\Programacion\Index.cshtml" />
     <Content Include="Views\Programacion\Crear.cshtml" />
     <Content Include="Views\Programacion\VisualizarProgramacion.cshtml" />
@@ -303,6 +314,7 @@
     <Content Include="Views\Anuncio\CrearCategoria.cshtml" />
     <Content Include="Views\Anuncio\EditarCategoria.cshtml" />
     <Content Include="Views\Eventos\VistaPublicitaria.cshtml" />
+    <Content Include="Views\Eventos\AprobacionPago.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
