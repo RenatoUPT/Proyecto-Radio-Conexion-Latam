@@ -13,13 +13,11 @@ namespace RadioConexionLatam.Controllers
     {
         private Model1 db = new Model1();
 
-        // GET: Usuario
         public ActionResult Index()
         {
             return View(db.Usuarios.ToList());
         }
 
-        // GET: Usuario/CrearUsuario
         public ActionResult CrearUsuario()
         {
             ViewBag.Roles = db.Roles.Select(r => new SelectListItem
@@ -27,13 +25,18 @@ namespace RadioConexionLatam.Controllers
                 Value = r.idRol.ToString(),
                 Text = r.descripcion
             }).ToList();
+            ViewBag.estado = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Activo", Value = "A" },
+                new SelectListItem { Text = "Inactivo", Value = "I" }
+            }, "Value", "Text");
+
             return View();
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult CrearUsuario([Bind(Include = "nombre,apellido,correo,contrasena,idRol")] Usuarios usuario)
+        public ActionResult CrearUsuario([Bind(Include = "nombre,apellido,correo,contrasena,idRol,estado")] Usuarios usuario)
         {
             try
             {
@@ -49,52 +52,67 @@ namespace RadioConexionLatam.Controllers
                 ModelState.AddModelError("", "Error al intentar guardar el usuario: " + ex.Message);
             }
 
+            ViewBag.Roles = db.Roles.Select(r => new SelectListItem
+            {
+                Value = r.idRol.ToString(),
+                Text = r.descripcion
+            }).ToList();
+            ViewBag.estado = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Activo", Value = "A" },
+                new SelectListItem { Text = "Inactivo", Value = "I" }
+            }, "Value", "Text");
+
             return View(usuario);
         }
 
         public ActionResult VisualizarUsuario()
         {
-            var modelo = db.Usuarios.ToList(); 
+            var modelo = db.Usuarios.ToList();
             return View(modelo);
         }
 
-        // GET: Usuario/EditarUsuario/5
         public ActionResult EditarUsuario(int id)
         {
-            Usuarios usuario = db.Usuarios.Find(id);
+            var usuario = db.Usuarios.Find(id);
             if (usuario == null)
             {
                 return HttpNotFound();
             }
             ViewBag.idRol = new SelectList(db.Roles, "idRol", "descripcion", usuario.idRol);
+            ViewBag.estado = new SelectList(new List<SelectListItem>
+            {
+                new SelectListItem { Text = "Activo", Value = "A" },
+                new SelectListItem { Text = "Inactivo", Value = "I" }
+            }, "Value", "Text", usuario.estado);
+
             return View(usuario);
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult EditarUsuario([Bind(Include = "idUsuario,nombre,apellido,correo,idRol,contrasena,estado")] Usuarios usuario)
+        public ActionResult EditarUsuario([Bind(Include = "idUsuario,nombre,apellido,correo,contrasena,idRol,estado")] Usuarios usuario)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Entry(usuario).State = EntityState.Modified;
-                try
+                if (ModelState.IsValid)
                 {
+                    db.Entry(usuario).State = EntityState.Modified;
                     db.SaveChanges();
                     return RedirectToAction("VisualizarUsuario");
                 }
-                catch (DbUpdateException ex)
-                {
-                    // Log the error or show a message to the user
-                    ModelState.AddModelError("", "No se pudo actualizar el usuario: " + ex.Message);
-                }
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                ModelState.AddModelError("", "Otro usuario ha modificado estos datos. Por favor, recargue la página y vuelva a intentarlo.");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Error al intentar guardar los cambios: " + ex.Message);
             }
 
             ViewBag.idRol = new SelectList(db.Roles, "idRol", "descripcion", usuario.idRol);
             return View(usuario);
         }
-
-
-
     }
 }

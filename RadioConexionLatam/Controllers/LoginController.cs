@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -12,6 +9,8 @@ namespace RadioConexionLatam.Controllers
 {
     public class LoginController : Controller
     {
+        private Model1 db = new Model1();
+
         [HttpGet]
         public ActionResult Index()
         {
@@ -27,41 +26,42 @@ namespace RadioConexionLatam.Controllers
                 string connectionString = ConfigurationManager.ConnectionStrings["Model1"].ConnectionString;
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    System.Diagnostics.Debug.WriteLine("Conexión establecida con la base de datos.");
-                    string query = "SELECT contrasena FROM Usuarios WHERE correo = @Email";
+                    string query = "SELECT contrasena, nombre, apellido, idRol FROM Usuarios WHERE correo = @Email";
                     SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue("@Email", model.Email);
 
                     con.Open();
-                    System.Diagnostics.Debug.WriteLine("Conexión abierta.");
-                    var storedPassword = cmd.ExecuteScalar() as string;
-
-                    if (storedPassword != null)
+                    using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        System.Diagnostics.Debug.WriteLine("Usuario encontrado, verificando contraseña.");
-                        if (VerifyPassword(model.Password, storedPassword))
+                        if (reader.Read())
                         {
-                            System.Diagnostics.Debug.WriteLine("Contraseña verificada correctamente.");
-                            FormsAuthentication.SetAuthCookie(model.Email, false);
-                            return RedirectToAction("PanelAdmin");
+                            string storedPassword = reader["contrasena"].ToString();
+                            string userName = reader["nombre"].ToString();
+                            string userLastName = reader["apellido"].ToString();
+                            string userRole = reader["idRol"].ToString();
+
+                            if (VerifyPassword(model.Password, storedPassword))
+                            {
+                                FormsAuthentication.SetAuthCookie(model.Email, false);
+                                Session["UserName"] = userName;
+                                Session["UserLastName"] = userLastName;
+                                Session["UserRole"] = userRole;
+
+                                return RedirectToAction("PanelAdmin");
+                            }
+                            else
+                            {
+                                ModelState.AddModelError("", "Correo o contraseña incorrectos.");
+                            }
                         }
                         else
                         {
-                            System.Diagnostics.Debug.WriteLine("Error de contraseña.");
                             ModelState.AddModelError("", "Correo o contraseña incorrectos.");
                         }
                     }
-                    else
-                    {
-                        System.Diagnostics.Debug.WriteLine("No se encontró el usuario.");
-                        ModelState.AddModelError("", "Correo o contraseña incorrectos.");
-                    }
                 }
             }
-            else
-            {
-                System.Diagnostics.Debug.WriteLine("Modelo no válido.");
-            }
+
             return View(model);
         }
 
@@ -70,10 +70,32 @@ namespace RadioConexionLatam.Controllers
             return inputPassword.Trim() == storedPassword.Trim();
         }
 
-
         public ActionResult PanelAdmin()
         {
+            // Obtener el nombre del usuario actual y el rol desde la sesión
+            var userName = Session["UserName"] as string;
+            var userLastName = Session["UserLastName"] as string;
+            var userRole = Session["UserRole"] as string;
+
+            // Contar anuncios y eventos activos
+            var activeAnunciosCount = db.Anuncios.Count(a => a.estado == "A");
+            var activeEventosCount = db.Eventos.Count(e => e.estado == "A");
+
+            // Pasar los datos a la vista
+            ViewBag.UserName = userName;
+            ViewBag.UserLastName = userLastName;
+            ViewBag.UserRole = userRole;
+            ViewBag.ActiveAnunciosCount = activeAnunciosCount;
+            ViewBag.ActiveEventosCount = activeEventosCount;
+
             return View();
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            Session.Clear();
+            return RedirectToAction("Index");
         }
     }
 }

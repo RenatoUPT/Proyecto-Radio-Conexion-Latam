@@ -88,6 +88,7 @@ namespace RadioConexionLatam.Models
             {
                 using (var db = new Model1())
                 {
+                    // Si la búsqueda contiene solo números, busca por idAnuncio, de lo contrario, busca por título
                     if (int.TryParse(Buscar, out int idAnuncio))
                     {
                         query = db.Anuncios
@@ -101,6 +102,7 @@ namespace RadioConexionLatam.Models
                             .ToList();
                     }
 
+                    // Incluir datos relacionados si es necesario
                     foreach (var anuncio in query)
                     {
                         if (anuncio.idImagenPrincipal.HasValue)
@@ -116,6 +118,7 @@ namespace RadioConexionLatam.Models
             }
             catch (Exception ex)
             {
+                // Manejo de excepción con más contexto
                 throw new ApplicationException("Error al buscar anuncios: " + ex.Message, ex);
             }
             return query;
@@ -131,7 +134,7 @@ namespace RadioConexionLatam.Models
             {
                 using (var db = new Model1())
                 {
-                    if (this.idAnuncio > 0)
+                    if (this.idAnuncio > 0)// por existe en la bd
                     {
                         db.Entry(this).State = EntityState.Modified;
                     }

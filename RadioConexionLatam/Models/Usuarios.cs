@@ -37,10 +37,6 @@ namespace RadioConexionLatam.Models
         [StringLength(1)]
         public string estado { get; set; }
 
-        [Timestamp]
-        public byte[] RowVersion { get; set; }
-
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Anuncios> Anuncios { get; set; }
 

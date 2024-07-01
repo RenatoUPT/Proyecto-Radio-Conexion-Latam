@@ -84,5 +84,18 @@ namespace RadioConexionLatam.Controllers
             return View(anuncio);
         }
 
+
+
+        public ActionResult Nosotros()
+        {
+                      
+            return View();
+        }
+        public ActionResult Programacion()
+        {
+
+            return View();
+        }
+
     }
 }

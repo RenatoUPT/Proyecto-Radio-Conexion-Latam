@@ -1,7 +1,5 @@
 using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using System.Linq;
 
 namespace RadioConexionLatam.Models
 {
@@ -10,6 +8,7 @@ namespace RadioConexionLatam.Models
         public Model1()
             : base("name=Model1")
         {
+          
         }
 
         public virtual DbSet<Anuncios> Anuncios { get; set; }
@@ -18,7 +17,9 @@ namespace RadioConexionLatam.Models
         public virtual DbSet<Imagenes> Imagenes { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Usuarios> Usuarios { get; set; }
+        public virtual DbSet<Eventos> Eventos { get; set; }
         public virtual DbSet<Videos> Videos { get; set; }
+        public virtual DbSet<ProgramacionSemanal> ProgramacionSemanal { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -40,6 +41,9 @@ namespace RadioConexionLatam.Models
                 .HasMany(e => e.Anuncios)
                 .WithOptional(e => e.Videos)
                 .HasForeignKey(e => e.idVideoPrincipal);
+
+            modelBuilder.Entity<ProgramacionSemanal>().ToTable("ProgramacionSemanal");
+
         }
     }
 }
